@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+:root{
+    margin:0;
+    padding:0;
+}
+
+body{
+    margin:0;
+    padding:0;
+    background-color: #faf9f9;
+    font-family: "Poppins";
+}
+header{
+    margin:0;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 0;
+}
+.navbar .container-main{
+    display: flex;
+    place-content: space-between;
+    background: #6d597a;
+    padding:1.3em;
+}
+.navbar .logo{
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    margin-right:30px;
+    padding: 0;
+    align-items: baseline;
+}
+ul >li{
+    display: inline;
+    padding: 1.2em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main .container-main{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+img{
+    max-width:90%;
+    max-height:90%;
+    width: auto;
+    height: auto;
+}
+.main{
+    padding: 5em 4em;
+    text-align: center;
+}
+.sub-header{
+    font-size: 1.3em;
+    color: #e76f51;
+}
+
+
+/*CSS NATHAN
+-
+-
+-
+*/
+.container-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 10px;
+
+}

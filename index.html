@@ -1,0 +1,95 @@
+
+<html lang="pt-PT">
+    <head>
+        <meta charset="UTF-8">
+            <title>Dashboard</title>
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+        
+        
+        
+        
+        
+        
+       
+        <script type="module">
+        import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+        import define from "https://api.observablehq.com/d/9c42df595be85ed0.js?v=3";
+        new Runtime().module(define, name => {
+          if (name === "viewof ticker") return new Inspector(document.querySelector("#observablehq-viewof-ticker-995e55b8"));
+          if (name === "viewof r") return new Inspector(document.querySelector("#observablehq-viewof-r-995e55b8"));
+          if (name === "viewof t") return new Inspector(document.querySelector("#observablehq-viewof-t-995e55b8"));
+          if (name === "plot3") return new Inspector(document.querySelector("#observablehq-plot3-995e55b8"));
+          if (name === "plot2") return new Inspector(document.querySelector("#observablehq-plot2-995e55b8"));
+          if (name === "plot") return new Inspector(document.querySelector("#observablehq-plot-995e55b8"));
+          if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-995e55b8"));
+          return ["DATA","Datas","data1","holders","tickers2","multi_symbols","tickers","fmulti_symbols","string_multi_symbols","dividends"].includes(name);
+        });
+        </script>
+    
+
+    </head>
+    
+    <body>
+        <header class="navbar">
+            <div class="container-main">
+                <div class="logo"><a href="dashboard.php">Olho de Tandera Finance <span></span></a></div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="dashboard.php">Página Inicial</a></li>
+                        <li><a href="comparar.php">Comparar Ações</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section class="main">
+            <div class="container-main">
+                <div class="left-side">
+                    <div class="">
+                        <div class="container-card">
+                            <div style="padding: 10px;">
+                                <h1>Gráfico diário</h1> 
+                                <div id="observablehq-viewof-ticker-995e55b8"></div>
+                                <div id="observablehq-viewof-r-995e55b8"></div>
+                                <div id="observablehq-plot-995e55b8"></div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div class="right-side">
+                    <div class="">
+                        <div  class="container-card">
+                            <div style="padding: 10px;"></div>
+                            <h1>Holders</h1>
+                            <div id="observablehq-chart-995e55b8"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <div class="container-card" style="margin-top: 10px;">
+            <div style="padding: 10px; ">
+                <h1>Comparação com vários símbolos</h1>
+                <div class="grid-container">
+                    <div id="observablehq-plot2-995e55b8"></div>
+                    <div>
+                        <div id="observablehq-viewof-t-995e55b8"></div>
+                        
+                    </div>
+                </div>
+                <h2>Dividendos</h2>
+                <div id="observablehq-plot3-995e55b8"></div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+
+</body>
+</html>
